@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		111ECF262B7E6B1F00D10D41 /* MealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECF252B7E6B1F00D10D41 /* MealsApp.swift */; };
-		111ECF282B7E6B1F00D10D41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECF272B7E6B1F00D10D41 /* ContentView.swift */; };
 		111ECF2A2B7E6B2100D10D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111ECF292B7E6B2100D10D41 /* Assets.xcassets */; };
 		111ECF2D2B7E6B2100D10D41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111ECF2C2B7E6B2100D10D41 /* Preview Assets.xcassets */; };
+		111ECF382B7E6D6900D10D41 /* MealListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECF372B7E6D6900D10D41 /* MealListModel.swift */; };
+		111ECF3B2B7E6D7100D10D41 /* DessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECF392B7E6D7100D10D41 /* DessertListView.swift */; };
+		111ECF3C2B7E6D7100D10D41 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECF3A2B7E6D7100D10D41 /* DessertDetailView.swift */; };
+		111ECF3E2B7E6D7700D10D41 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECF3D2B7E6D7700D10D41 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		111ECF222B7E6B1F00D10D41 /* Meals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		111ECF252B7E6B1F00D10D41 /* MealsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsApp.swift; sourceTree = "<group>"; };
-		111ECF272B7E6B1F00D10D41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		111ECF292B7E6B2100D10D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111ECF2C2B7E6B2100D10D41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		111ECF372B7E6D6900D10D41 /* MealListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealListModel.swift; sourceTree = "<group>"; };
+		111ECF392B7E6D7100D10D41 /* DessertListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertListView.swift; sourceTree = "<group>"; };
+		111ECF3A2B7E6D7100D10D41 /* DessertDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
+		111ECF3D2B7E6D7700D10D41 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				111ECF252B7E6B1F00D10D41 /* MealsApp.swift */,
-				111ECF272B7E6B1F00D10D41 /* ContentView.swift */,
-				111ECF292B7E6B2100D10D41 /* Assets.xcassets */,
+				111ECF352B7E6B5F00D10D41 /* Model */,
+				111ECF332B7E6B3600D10D41 /* Views */,
+				111ECF342B7E6B4000D10D41 /* Utilities */,
+				111ECF362B7E6B6F00D10D41 /* Resources */,
 				111ECF2B2B7E6B2100D10D41 /* Preview Content */,
 			);
 			path = Meals;
@@ -65,6 +73,39 @@
 				111ECF2C2B7E6B2100D10D41 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		111ECF332B7E6B3600D10D41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				111ECF392B7E6D7100D10D41 /* DessertListView.swift */,
+				111ECF3A2B7E6D7100D10D41 /* DessertDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		111ECF342B7E6B4000D10D41 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				111ECF3D2B7E6D7700D10D41 /* NetworkManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		111ECF352B7E6B5F00D10D41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				111ECF372B7E6D6900D10D41 /* MealListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		111ECF362B7E6B6F00D10D41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				111ECF292B7E6B2100D10D41 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111ECF282B7E6B1F00D10D41 /* ContentView.swift in Sources */,
+				111ECF3B2B7E6D7100D10D41 /* DessertListView.swift in Sources */,
+				111ECF382B7E6D6900D10D41 /* MealListModel.swift in Sources */,
+				111ECF3E2B7E6D7700D10D41 /* NetworkManager.swift in Sources */,
+				111ECF3C2B7E6D7100D10D41 /* DessertDetailView.swift in Sources */,
 				111ECF262B7E6B1F00D10D41 /* MealsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
